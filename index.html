@@ -13,57 +13,65 @@
 </head>
 
 <body>
- <header>
-  <div id="navbar-container"></div>
-</header>
+  <header>
+    <div id="navbar-container"></div>
+  </header>
 
-
-  <div id="section-home">
- <div class="container">
-    <h1>Apple Environmental Progress Report</h1>
-    <p>Analisi dei progressi ambientali di Apple (2015-2024) provenienti dal report di sostenibilità</p>
-
-    <a class="download-btn btn " href="report/Apple_Environmental_Progress_Report_2025.pdf" download="filename">
-      Scarica il report di sostenibilità
-    </a>
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <section>
-          <h2>Emissioni Evitate nel 2024</h2>
-          <canvas id="avoidedEmissions"></canvas>
-        </section>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <section>
-          <h2>Andamento delle Emissioni di Gas Serra (GHG)</h2>
-          <canvas id="ghgTrend"></canvas>
-        </section>
-      </div>
+  <div id="download-report">
+    <div class="container">
+      <h1>Scarica il report di sostenibilità di Apple</h1>
+      <a class="download-btn btn " href="report/Apple_Environmental_Progress_Report_2025.pdf" download="filename">
+        Scarica qui
+      </a>
     </div>
-    <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <section>
-          <h2>Percentuale di Materiali Riciclati nei Prodotti (2024)</h2>
-          <canvas id="recycledMaterials"></canvas>
-        </section>
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12">
-        <section>
-          <h2>Composizione del Packaging (2015 vs 2024)</h2>
-          <canvas id="packaging"></canvas>
-        </section>
-      </div>
-    </div>
-    <div class="row">
-      <section>
-        <h2>Crescita della Capacità di Energia Rinnovabile nella Supply Chain</h2>
-        <canvas id="supplierRenewables"></canvas>
-      </section>
-    </div>
-
   </div>
+
+  <div id="charts">
+    <div class="container">
+      <div class="row">
+        <h1>Analisi Grafica dei Dati di Sostenibilità Apple</h1>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <section>
+            <h2>Emissioni Evitate nel 2024</h2>
+            <canvas id="avoidedEmissions"></canvas>
+          </section>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <section>
+            <h2>Andamento delle Emissioni di Gas Serra (GHG)</h2>
+            <canvas id="ghgTrend"></canvas>
+          </section>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <section>
+            <h2>Percentuale di Materiali Riciclati nei Prodotti (2024)</h2>
+            <canvas id="recycledMaterials"></canvas>
+          </section>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <section>
+            <h2>Composizione del Packaging (2015 vs 2024)</h2>
+            <canvas id="packaging"></canvas>
+          </section>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <section>
+            <h2>Crescita della Capacità di Energia Rinnovabile nella Supply Chain</h2>
+            <canvas id="supplierRenewables"></canvas>
+          </section>
+        </div>
+      </div>
+    </div>
   </div>
- 
+
+
+
+
+
   <footer>
     <p>Progetto realizzato per il Project Work della laurea triennale L-31</p>
   </footer>
@@ -81,8 +89,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-<script> 
-  $(function(){
+<script>
+  $(function () {
     // Percorso relativo alla pagina attuale
     let pathPrefix = window.location.pathname.includes('/pages/') ? '../' : '';
     $("#navbar-container").load(pathPrefix + "components/navbar.html");

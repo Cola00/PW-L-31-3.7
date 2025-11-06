@@ -14,9 +14,41 @@
 
 <body>
   <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top ">
+      <div class="container">
+        <!-- Logo Apple con svg -->
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+          <svg class="apple-logo" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"
+            width="32" height="32">
+            <path
+              d="M18.71 19.5C17.88 20.74 17 21.95 15.66 21.97C14.32 22 13.89 21.18 12.37 21.18C10.84 21.18 10.37 21.95 9.09997 22C7.78997 22.05 6.79997 20.68 5.95997 19.47C4.24997 17 2.93997 12.45 4.69997 9.39C5.56997 7.87 7.12997 6.91 8.81997 6.88C10.1 6.86 11.32 7.75 12.11 7.75C12.89 7.75 14.37 6.68 15.92 6.84C16.57 6.87 18.39 7.1 19.56 8.82C19.47 8.88 17.39 10.1 17.41 12.63C17.44 15.65 20.06 16.66 20.09 16.67C20.06 16.74 19.67 18.11 18.71 19.5ZM13 3.5C13.73 2.67 14.94 2.04 15.94 2C16.07 3.17 15.6 4.35 14.9 5.19C14.21 6.04 13.07 6.7 11.95 6.61C11.8 5.46 12.36 4.26 13 3.5Z">
+            </path>
+          </svg>
+          <span class="ms-2">Sostenibilità di Apple</span>
+        </a>
+
+        <!-- Menu mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Link -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item "><a class="nav-link active" href="/PW-L-31-3.7/">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#download-report">Report</a></li>
+            <li class="nav-item"><a class="nav-link" href="#info-cards">Info</a></li>
+            <li class="nav-item"><a class="nav-link" href="#charts">Charts</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <div id="navbar-container"></div>
   </header>
 
+  <!--Sezione dove scaricare il report di sostenibilità-->
   <div id="download-report">
     <div class="container">
       <h1>Scarica il report di sostenibilità di Apple</h1>
@@ -26,14 +58,96 @@
     </div>
   </div>
 
+  <!--Sezione con le cards per introdurre i grafici presentati sotto utilizzando delle cards di Bootstrap 5 -->
+  <div id="info-cards" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h1 class="fw-bold">Analisi Grafica dei Dati di Sostenibilità Apple</h1>
+        <p class="lead">
+          Dati estratti dal <strong>Apple Environmental Progress Report 2025</strong><br>
+          <span class="text-muted">Andamento delle emissioni, materiali riciclati, packaging e investimenti in energia
+            rinnovabile</span>
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <div class="mb-3 fs-1 text-success">🌍</div>
+              <h5 class="card-title fw-bold">Andamento delle emissioni</h5>
+              <p class="card-text mt-3 text-start">
+                Apple punta alla <strong>neutralità carbonica entro il 2030</strong>, con una riduzione del
+                <strong>75%</strong> delle emissioni rispetto al 2015.
+                Nel 2024 è già stato raggiunto un <strong>-60%</strong>.
+                L’obiettivo include tutta la catena del valore grazie al passaggio al <strong>100% di elettricità
+                  pulita</strong> e a progetti di rimozione del carbonio.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body text-center">
+              <div class="mb-3 fs-1 text-success">🔄</div>
+              <h5 class="card-title fw-bold">Materiali riciclati</h5>
+              <p class="card-text mt-3 text-start">
+                Nel 2024, Apple ha utilizzato:<br>
+                • <strong>71%</strong> alluminio riciclato<br>
+                • <strong>76%</strong> cobalto e &gt;80% terre rare<br>
+                • <strong>100%</strong> rame riciclato in più moduli<br>
+                • <strong>50%</strong> plastica riciclata negli iPhone 16<br>
+                Entro il 2025: <strong>100% oro, stagno, cobalto e terre rare riciclate</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Card 3 -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+              <div class="mb-3 fs-1 text-success">📦</div>
+              <h5 class="card-title fw-bold text-center">Packaging sostenibile</h5>
+              <p class="card-text mt-3 text-start">
+                Apple è vicina all’obiettivo di <strong>eliminare la plastica</strong> dagli imballaggi entro il 2025,
+                passando a packaging <strong>100% in fibra</strong> da fonti riciclate o foreste gestite
+                responsabilmente.
+                Dal 2015 la plastica è diminuita del <strong>20%</strong>, e nel 2024 i principali prodotti hanno
+                confezioni interamente in fibra.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="card h-100 shadow-sm border-0">
+            <div class="card-body ">
+              <div class="mb-3 fs-1 text-success">☀️</div>
+              <h5 class="card-title fw-bold text-center">Energia rinnovabile</h5>
+              <p class="card-text mt-3 text-start">
+                Tutta l’energia per le operazioni aziendali di Apple proviene da <strong>fonti rinnovabili</strong>.
+                L’azienda punta a portare l’intera catena produttiva al <strong>100% di elettricità pulita entro il
+                  2030</strong>,
+                con investimenti diretti in progetti <strong>solari, eolici e idroelettrici</strong> a basso impatto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Sezione dei grafici realizzati in JQuery tramite la libreria chart.js-->
   <div id="charts">
     <div class="container">
       <div class="row">
-        <h1 class="text-center mb-4">Analisi Grafica dei Dati di Sostenibilità Apple</h1>
-        <p class="text-center mb-5 lead">
-          Dati estratti dal <strong>Apple Environmental Progress Report 2025</strong>:
-          andamento delle emissioni, materiali riciclati, packaging e investimenti in energia rinnovabile.
-        </p>
+        <h1 class="fw-bold">Grafici</h1>
         <div class="col-lg-6 col-md-6 col-sm-12">
           <section>
             <h2>Emissioni Evitate nel 2024</h2>
@@ -71,6 +185,8 @@
       </div>
     </div>
   </div>
+
+
 
   <footer>
     <p>Progetto realizzato per il Project Work della laurea triennale L-31</p>

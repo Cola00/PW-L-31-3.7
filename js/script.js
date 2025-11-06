@@ -109,7 +109,7 @@
         }
       }
     });
-
+ 
 
     // === 5) Energia rinnovabile supply chain ===
     new Chart($('#supplierRenewables'), {

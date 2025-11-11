@@ -176,16 +176,19 @@
 
 <script>
   $(function () {
-    $("#navbar-container").load("/PW-L-31-3.7/components/navbar.html");
-  });
-
-  document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', function() {
-      document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
-      this.classList.add('active');
+    // Carica la navbar
+    $("#navbar-container").load("/PW-L-31-3.7/components/navbar.html", function () {
+      // Questo codice parte SOLO dopo che la navbar è stata caricata
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+          document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
     });
   });
 </script>
+
 
 
 </html>

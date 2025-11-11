@@ -12,10 +12,10 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70" tabindex="0">
+
   <header>
-
-
+    <!--Import della navbar che si trova nella cartella components-->
     <div id="navbar-container"></div>
   </header>
 
@@ -156,8 +156,7 @@
     </div>
   </div>
 
-
-
+  <!--Footer del sito-->
   <footer>
     <p>Progetto realizzato per il Project Work della laurea triennale L-31</p>
   </footer>
@@ -180,6 +179,13 @@
     $("#navbar-container").load("/PW-L-31-3.7/components/navbar.html");
   });
 
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', function() {
+      document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
 </script>
+
 
 </html>

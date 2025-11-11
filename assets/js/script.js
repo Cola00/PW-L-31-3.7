@@ -1,6 +1,7 @@
   $(function() {
 
-    // === 1) Emissioni GHG 2015 → 2024 → target 2030 ===
+    // 1) Emissioni GHG 2015 → 2024 → target 2030
+    //Fonte: pag. 11 del report
     new Chart($('#ghgTrend'), {
       type: 'line',
       data: {
@@ -30,7 +31,8 @@
     });
 
 
-    // === 2) Emissioni evitate nel 2024 ===
+    // 2) Emissioni evitate nel 2024 
+    //Fonte: pag. 11 del report
     new Chart($('#avoidedEmissions'), {
       type: 'bar',
       data: {
@@ -62,7 +64,8 @@
     });
 
 
-    // === 3) Materiali riciclati ===
+    // 3) Materiali riciclati
+    // Fonte: pag. 15–16 del report
     new Chart($('#recycledMaterials'), {
       type: 'bar',
       data: {
@@ -85,7 +88,8 @@
     });
 
 
-    // === 4) Composizione packaging ===
+    // 4) Packaging 
+    // Fonte: pag. 21 del report
     new Chart($('#packaging'), {
       type: 'bar',
       data: {
@@ -111,7 +115,8 @@
     });
  
 
-    // === 5) Energia rinnovabile supply chain ===
+    // 5) Energia rinnovabile supply chain 
+    // Fonte: pag. 24–25 del report
     new Chart($('#supplierRenewables'), {
       type: 'line',
       data: {
@@ -133,5 +138,4 @@
         }
       }
     });
-
   });

@@ -1,8 +1,16 @@
+<!-- Dichiara che il documento è un file HTML5. Serve ai browser per interpretare correttamente la sintassi e le regole del linguaggio. -->
 <!DOCTYPE html>
+
+<!-- Apre il tag principale <html> e imposta l’attributo "lang" su "it", indicando che la lingua del contenuto è l’italiano. Questo è utile per l’accessibilità e per i motori di ricerca (SEO). -->
 <html lang="it">
 
+<!-- Inizio della sezione <head>, dove si inseriscono metadati, link a risorse esterne e impostazioni del documento. -->
 <head>
+
+  <!-- Imposta la codifica dei caratteri su UTF-8, permettendo di visualizzare correttamente lettere accentate e simboli. -->
   <meta charset="UTF-8">
+
+  <!--Adatta il contenuto della pagina al dispositivo e gestisce lo zoom iniziale impostandolo al 100%-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apple Report di sostenibilià con Analisi Grafica</title>
   <!--Foglio di stile contentene il design del sito-->
@@ -12,23 +20,26 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70" tabindex="0">
+<body>
 
   <header>
-    <!--Import della navbar che si trova nella cartella components-->
+    <!--Import dinamico della navbar che si trova nella cartella components-->
     <div id="navbar-container"></div>
   </header>
 
   <!--Sezione dove scaricare il report di sostenibilità-->
-  <div id="download-report">
-    <div class="container">
-      <h1>Scarica il report di sostenibilità di Apple</h1>
-      <a class="download-btn btn" href="report/Apple_Environmental_Progress_Report_2025.pdf"
-        download="Apple_Sustainability_Report_2025.pdf">
-        Scarica il report
+<section id="download-report" class="py-5 bg-light text-center">
+      <h1 class="fw-bold mb-3 text-success">Scarica il Report di Sostenibilità 2025</h1>
+      <p class="lead mb-4 text-secondary">
+        Scopri come Apple sta riducendo le emissioni e utilizzando materiali riciclati per un futuro più verde. 🌱
+      </p>
+      <a class="btn btn-success btn-lg px-4" 
+         href="report/Apple_Environmental_Progress_Report_2025.pdf"
+         download="Apple_Sustainability_Report_2025.pdf">
+        <i class="bi bi-download me-2"></i> Scarica il report
       </a>
-    </div>
-  </div>
+</section>
+
 
   <!--Sezione con le cards per introdurre i grafici presentati sotto utilizzando delle cards di Bootstrap 5 -->
   <div id="info-cards" class="py-5 bg-light">
@@ -117,7 +128,7 @@
   <div id="charts">
     <div class="container">
       <div class="row">
-        <h1 class="fw-bold">Grafici</h1>
+        <h1 class="fw-bold mb-5">Grafici</h1>
         <div class="col-lg-6 col-md-6 col-sm-12">
           <section>
             <h2>Emissioni Evitate nel 2024</h2>
@@ -163,7 +174,7 @@
 
 </body>
 
-<!-- Librerie utilizzate per la creazione dei grafici-->
+
 <!-- Libreria di Javascript: JQuery per la dinamicità del sito-->
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <!--chart.js per la creazione dei grafici-->
@@ -175,10 +186,11 @@
   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 <script>
+  //al caricamento della pagina, importa la navabar presente nel file navbar.html
   $(function () {
-    // Carica la navbar
+    // seleziona l'elemento HTML con id "navabar-container" e carica il contenuto del file "/components/navbar.html" 
     $("#navbar-container").load("/PW-L-31-3.7/components/navbar.html", function () {
-      // Questo codice parte SOLO dopo che la navbar è stata caricata
+      // Viene aggiunto un listener ai link della navbar per gestire la classe "active" di bootstap che serve a evidenziare il link attivo
       document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', function() {
           document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));

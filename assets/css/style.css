@@ -1,7 +1,6 @@
 /*Variabili da utilizzare cosi da rendere più snella la manutenzione del codice*/
 :root{
-  --btn-bg-color: #198754;            
-  --primary-color: #0071e3;           
+  --btn-bg-color: #198754;                      
   --secondary-color: #6e6e73;         
   --background-color: #f5f5f7;        
   --text-color: #1d1d1f;                
@@ -10,6 +9,7 @@
   --footer-text-color: #ffffff;   
 }
 
+/*Stile generale per il body della pagina*/
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
@@ -17,6 +17,8 @@ body {
   background: var(--background-color);
   color: var( --text-color);
 }
+
+/*Stile per la navbar e l'header*/
 nav{
   min-height: 80px;
   background: var(--header-background-color) !important;
@@ -32,17 +34,14 @@ h1 {
   margin: 0;
 }
 
+/*Stile per le sezioni*/
 section {
   width: 100%;
-  max-height: 500px;
-  min-height: 500px;
+  min-height: fit-content; /*Adatta l'altezza al contenuto*/
   margin: 0px auto;
   background: #fff;
   padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-
 
 h2 {
   text-align: center;
@@ -78,7 +77,9 @@ footer {
   align-items: center;
   text-align: center;
   align-content: center;
-  height: 600px;
+  height: max-content;
+  padding-top: 300px !important;
+  padding-bottom:300px !important;
   background-color: white;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 25px;
@@ -86,21 +87,9 @@ footer {
 }
 
 #download-report {
-  background: linear-gradient(135deg, #f8f9fa, #e8f5e9);
+  background: linear-gradient(135deg, #f8f9fa, #cfe2d0);
 }
 
-.download-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-
-#charts{
-  margin: 40px auto;
-  background: #fff;
-  padding: 25px;
-  border-radius: 8px;
-}
 .download-btn {
   background-color: var(--btn-bg-color) !important; /*Uso di !important per sovrascrivere le carattersitiche di Bootstrap 5*/
   display: block;          
@@ -111,6 +100,15 @@ footer {
   border-radius: 4px;
   cursor: pointer;
 }
+
+#charts{
+  margin: 40px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+
 
 .container{
   text-align: center;

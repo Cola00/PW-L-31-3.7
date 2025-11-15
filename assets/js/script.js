@@ -69,10 +69,10 @@
     new Chart($('#recycledMaterials'), {
       type: 'bar',
       data: {
-        labels: ['Tungsteno','Alluminio','Cobalto','Oro','Litio','Terre rare','Media prodotti'],
+        labels: ['Tungsteno','Alluminio','Cobalto','Oro','Litio','Terre rare'],
         datasets: [{
           label: '% da fonte riciclata (2024)',
-          data: [99, 71, 76, 40, 53, 80, 24],
+          data: [99, 71, 76, 40, 53, 80],
           backgroundColor: '#FF9800'
         }]
       },

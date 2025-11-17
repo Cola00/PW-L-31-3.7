@@ -1,18 +1,16 @@
 <!-- Dichiara che il documento è un file HTML5. Serve ai browser per interpretare correttamente la sintassi e le regole del linguaggio. -->
 <!DOCTYPE html>
-
 <!-- Apre il tag principale <html> e imposta l’attributo "lang" su "it", indicando che la lingua del contenuto è l’italiano. Questo è utile per l’accessibilità e per i motori di ricerca (SEO). -->
 <html lang="it">
-
 <!-- Inizio della sezione <head>, dove si inseriscono metadati, link a risorse esterne e impostazioni del documento. -->
-<head>
 
+<head>
   <!-- Imposta la codifica dei caratteri su UTF-8, permettendo di visualizzare correttamente lettere accentate e simboli. -->
   <meta charset="UTF-8">
 
   <!--Adatta il contenuto della pagina al dispositivo e gestisce lo zoom iniziale impostandolo al 100%-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apple Report di sostenibilià con Analisi Grafica</title>
+  <title>Apple Report di sostenibilià</title>
   <!--Foglio di stile contentene il design del sito-->
   <link rel="stylesheet" href="assets/css/style.css">
   <!--Foglio di stile contentene il css di Bootstrap 5-->
@@ -28,21 +26,20 @@
   </header>
 
   <!--Sezione dove scaricare il report di sostenibilità-->
-<section id="download-report" class="py-5 bg-light text-center">
-      <h1 class="fw-bold mb-3 text-success">Scarica il Report di Sostenibilità 2025</h1>
-      <p class="lead mb-4 text-secondary">
-        Scopri come Apple sta riducendo le emissioni e utilizzando materiali riciclati per un futuro più verde. 🌱
-      </p>
-      <a class="btn btn-success btn-lg px-4" 
-         href="report/Apple_Environmental_Progress_Report_2025.pdf"
-         download="Apple_Sustainability_Report_2025.pdf">
-        <i class="bi bi-download me-2"></i> Scarica il report
-      </a>
-</section>
+  <section id="download-report" class="py-5 bg-light text-center">
+    <h1 class="fw-bold mb-3 text-success">Scarica l'ultimo Report di Sostenibilità</h1>
+    <p class="lead mb-4 text-secondary">
+      Scopri come Apple sta riducendo le emissioni e utilizzando materiali riciclati per un futuro più verde. 🌱
+    </p>
+    <a class="btn btn-success btn-lg px-4" href="report/Apple_Environmental_Progress_Report_2025.pdf"
+      download="Apple_Sustainability_Report_2025.pdf">
+      <i class="bi bi-download me-2"></i> Scarica il report
+    </a>
+  </section>
 
 
   <!--Sezione con le cards per introdurre i grafici presentati sotto utilizzando delle cards di Bootstrap 5 -->
-  <div id="info-cards" class="py-5 bg-light">
+  <div id="info-cards" class="bg-light">
     <div class="container">
       <div class="text-center mb-5">
         <h1 class="fw-bold">Analisi Grafica dei Dati di Sostenibilità Apple</h1>
@@ -57,14 +54,15 @@
           <div class="card h-100 shadow-sm border-0">
             <div class="card-body">
               <div class="mb-3 fs-1 text-success">
-                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-          stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="10"></circle>
-          <line x1="2" y1="12" x2="22" y2="12"></line>
-          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"></path>
-        </svg>
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z">
+                  </path>
+                </svg>
               </div>
-              <h5 class="card-title fw-bold">Andamento delle emissioni</h5>
+              <h5 class="card-title fw-bold">Emissioni</h5>
               <p class="card-text mt-3 text-start">
                 Apple punta alla <strong>neutralità carbonica entro il 2030</strong>, con una riduzione del
                 <strong>75%</strong> delle emissioni rispetto al 2015.
@@ -72,7 +70,11 @@
                 L’obiettivo include tutta la catena del valore grazie al passaggio al <strong>100% di elettricità
                   pulita</strong> e a progetti di rimozione del carbonio.
               </p>
+
             </div>
+            <a class="btn btn-success btn-lg px-4" href="#grafico-emissioni"
+              download="Apple_Sustainability_Report_2025.pdf">Grafico
+            </a>
           </div>
         </div>
 
@@ -81,7 +83,7 @@
           <div class="card h-100 shadow-sm border-0">
             <div class="card-body text-center">
               <div class="mb-3 fs-1 text-success">
-            <img width="48" height="48" src="https://img.icons8.com/fluency/48/recycling.png" alt="recycling"/>
+                <img width="48" height="48" src="https://img.icons8.com/fluency/48/recycling.png" alt="recycling" />
               </div>
               <h5 class="card-title fw-bold">Materiali riciclati</h5>
               <p class="card-text mt-3 text-start">
@@ -92,7 +94,11 @@
                 • <strong>50%</strong> plastica riciclata negli iPhone 16<br>
                 Entro il 2025: <strong>100% oro, stagno, cobalto e terre rare riciclate</strong>.
               </p>
+
             </div>
+            <a class="btn btn-success btn-lg px-4" href="#grafico-materiali"
+              download="Apple_Sustainability_Report_2025.pdf">Grafico
+            </a>
           </div>
         </div>
 
@@ -101,13 +107,16 @@
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="card h-100 shadow-sm border-0">
             <div class="card-body">
-              <div class="mb-3 fs-1 text-success"> 
+              <div class="mb-3 fs-1 text-success">
                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-          stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.73z"></path>
-          <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-          <line x1="12" y1="22.08" x2="12" y2="12"></line>
-        </svg></div>
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.73z">
+                  </path>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                  <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+              </div>
               <h5 class="card-title fw-bold text-center">Packaging sostenibile</h5>
               <p class="card-text mt-3 text-start">
                 Apple è vicina all’obiettivo di <strong>eliminare la plastica</strong> dagli imballaggi entro il 2025,
@@ -116,7 +125,11 @@
                 Dal 2015 la plastica è diminuita del <strong>20%</strong>, e nel 2024 i principali prodotti hanno
                 confezioni interamente in fibra.
               </p>
+
             </div>
+            <a class="btn btn-success btn-lg px-4" href="#grafico-packaging"
+              download="Apple_Sustainability_Report_2025.pdf">Grafico
+            </a>
           </div>
         </div>
 
@@ -125,18 +138,18 @@
           <div class="card h-100 shadow-sm border-0">
             <div class="card-body ">
               <div class="mb-3 fs-1 text-success">
-                 <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-          stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="5"></circle>
-          <line x1="12" y1="1" x2="12" y2="3"></line>
-          <line x1="12" y1="21" x2="12" y2="23"></line>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-          <line x1="1" y1="12" x2="3" y2="12"></line>
-          <line x1="21" y1="12" x2="23" y2="12"></line>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
               </div>
               <h5 class="card-title fw-bold text-center">Energia rinnovabile</h5>
               <p class="card-text mt-3 text-start">
@@ -146,6 +159,9 @@
                 con investimenti diretti in progetti <strong>solari, eolici e idroelettrici</strong> a basso impatto.
               </p>
             </div>
+            <a class="btn btn-success btn-lg px-4" href="#grafico-energia"
+              download="Apple_Sustainability_Report_2025.pdf">Grafico
+            </a>
           </div>
         </div>
       </div>
@@ -155,41 +171,84 @@
   <!--Sezione dei grafici realizzati in JQuery tramite la libreria chart.js-->
   <div id="charts">
     <div class="container">
-      <div class="row">
-        <h1 class="fw-bold mb-5">Grafici</h1>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <section>
-            <h2>Emissioni Evitate nel 2024</h2>
-            <canvas id="avoidedEmissions"></canvas>
-          </section>
+      <h1 class="fw-bold mb-5">Grafici</h1>
+      <div id="grafico-emissioni">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <section>
+              <h2>Emissioni Evitate nel 2024</h2>
+              <canvas id="avoidedEmissions"></canvas>
+            </section>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <!--classi per posizionare il testo al centro del box-->
+           <div class="d-flex justify-content-center align-items-center h-100">
+            <h3 class="text">Nel 2024 Apple ha evitato 41 milioni di tonnellate di CO₂e, grazie a una strategia combinata che coinvolge fornitori, materiali e processi produttivi.</h3>
+          </div>
+          </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <section>
-            <h2>Andamento delle Emissioni di Gas Serra (GHG)</h2>
-            <canvas id="ghgTrend"></canvas>
-          </section>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="d-flex justify-content-center align-items-center h-100">
+            <h3 class="text">Il trend mostra una riduzione costante delle emissioni totali di Apple negli ultimi dieci anni.</h3>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <section>
+              <h2>Emissioni di Gas Serra (GHG)</h2>
+              <canvas id="ghgTrend"></canvas>
+            </section>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <section>
-            <h2>Percentuale di Materiali Riciclati nei Prodotti (2024)</h2>
-            <canvas id="recycledMaterials"></canvas>
-          </section>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <section>
-            <h2>Composizione del Packaging (2015 vs 2024)</h2>
-            <canvas id="packaging"></canvas>
-          </section>
+
+
+      <div id="grafico-materiali">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <section>
+              <h2>Percentuale di Materiali Riciclati nei Prodotti (2024)</h2>
+              <canvas id="recycledMaterials"></canvas>
+            </section>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+             <div class="d-flex justify-content-center align-items-center h-100">
+            <h3 class="text">Apple incrementa costantemente la percentuale di materiali riciclati nei suoi prodotti.</h3>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12">
-          <section>
-            <h2>Crescita della Capacità di Energia Rinnovabile nella Supply Chain</h2>
-            <canvas id="supplierRenewables"></canvas>
-          </section>
+
+      <div id="grafico-packaging">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+           <div class="d-flex justify-content-center align-items-center h-100">
+            <h3 class="text">Il packaging dei prodotti Apple è stato oggetto di una profonda trasformazione negli ultimi dieci anni.</h3>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <section>
+              <h2>Composizione del Packaging (2015 vs 2024)</h2>
+              <canvas id="packaging"></canvas>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div id="grafico-energia">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <section>
+              <h2>Crescita della Capacità di Energia Rinnovabile nella Supply Chain</h2>
+              <canvas id="supplierRenewables"></canvas>
+            </section>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+             <div class="d-flex justify-content-center align-items-center h-100">
+            <h3 class="text">La capacità di energia rinnovabile impiegata dai fornitori Apple è cresciuta rapidamente, questo incremento è il risultato di investimenti in sistemi solari, eolici e idroelettrici, e dell’adesione di un numero crescente di fornitori ai programmi di energia pulita.</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -216,21 +275,19 @@
 <script>
   //al caricamento della pagina, importa la navabar presente nel file navbar.html
   //scelta fatta per facilitare la manutenzione del codice
-$(function () {
-  // Carica la navbar dal file esterno che si trova nella cartella components
-  $("#navbar-container").load("/PW-L-31-3.7/components/navbar.html", function () {
-    // Aggiunge il listener ai link della navbar
-    $(".nav-link").on("click", function () {
-      // Rimuove la classe "active" da tutti i link
-      $(".nav-link").removeClass("active");
-      // Aggiunge la classe "active" solo al link cliccato
-      $(this).addClass("active");
+  $(function () {
+    // Carica la navbar dal file esterno che si trova nella cartella components
+    $("#navbar-container").load("/PW-L-31-3.7/components/navbar.html", function () {
+      // Aggiunge il listener ai link della navbar
+      $(".nav-link").on("click", function () {
+        // Rimuove la classe "active" da tutti i link
+        $(".nav-link").removeClass("active");
+        // Aggiunge la classe "active" solo al link cliccato
+        $(this).addClass("active");
+      });
     });
   });
-});
 
 </script>
-
-
 
 </html>
